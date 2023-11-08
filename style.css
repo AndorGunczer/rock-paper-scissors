@@ -2,6 +2,10 @@ html, body {
     height: 100%;
 }
 
+h1 {
+    margin-top: 1em;
+}
+
 h1, h2, p {
     text-align: center;
     margin-bottom: 2em;
@@ -12,21 +16,20 @@ h1, h2, p {
     flex-direction: column;
     /* justify-content: space-around; */
     /* align-items: center; */
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin: 5em 10em 5em 10em;
 }
 
 .box {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .symbol_container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 5em 2em 0 2em;
+    margin: 5em 9em 0 9em;
 }
 
 .symbols {
