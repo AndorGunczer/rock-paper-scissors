@@ -35,3 +35,7 @@ h1, h2, p {
     border: 2px solid blue;
     border-radius: 10%;
 }
+
+.box p {
+    width: 4em;
+}
