@@ -1,9 +1,7 @@
 let computer_score = document.getElementsByClassName('score')[1];
 let player_score = document.getElementsByClassName('score')[0];
 
-// console.log(player_score.innerHTML);
-// console.log('finished');
- function player_decision(event) {
+ function decisions(event) {
     let player_decision;
 
     switch (event.id) {
@@ -15,8 +13,6 @@ let player_score = document.getElementsByClassName('score')[0];
     computer_decision = Math.floor(Math.random() * 3);
 
     game(computer_decision, player_decision);
-
-    // console.log(player_decision + " vs " + computer_decision);
  }
 
  function game(computer_decision, player_decision) {
@@ -35,20 +31,24 @@ let player_score = document.getElementsByClassName('score')[0];
     if (player_wins == true) {
         victor = "player";
         player_score.innerHTML = parseInt(player_score.innerHTML) + 1;
+        score_checker();
     } else {
         computer_score.innerHTML = parseInt(computer_score.innerHTML) + 1;
         victor = "computer";
+        score_checker();
     }
 
     console.log("player: " + player_decision + "\ncomputer: " + computer_decision + "\nwinner: " + victor);
  }
 
-//  computer_score.addEventListener("click", function (e) {
-//     if (parseInt(computer_score.innerHTML) == 5)
-//         alert("computer has won!");
-//  });
-
-//  player_score.addEventListener("click", function (e) {
-//      if (parseInt(player_score.innerHTML) == 5)
-//         alert("player has won!");
-//  });
+function score_checker() {
+    if (player_score.innerHTML == 5) {
+       player_score.innerHTML = 0;
+       computer_score.innerHTML = 0;
+       alert("player has won!");
+    } else if (computer_score.innerHTML == 5) {
+       player_score.innerHTML = 0;
+       computer_score.innerHTML = 0;
+       alert("computer has won!");             
+    }
+ }
