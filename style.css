@@ -12,13 +12,16 @@ h1 {
 
 h1, h2, p {
     text-align: center;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
+    /* font-family: "Kenia", "sans-serif"; */
+    font-family: sans-serif;
     color: #F9FAF8;
 }
 
 img {
     height: 100%;
     width: 100%;
+    border-radius: 10%;
 }
 
 .score_container {
