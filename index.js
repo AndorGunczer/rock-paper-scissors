@@ -50,10 +50,10 @@ let player_score = document.getElementsByClassName('score')[0];
 
     if (player_wins == true) {
         victor = "player";
-        player_score.innerHTML = parseInt(player_score.innerHTML) + 1;
+        player_score.textContent = parseInt(player_score.textContent) + 1;
         score_checker();
     } else {
-        computer_score.innerHTML = parseInt(computer_score.innerHTML) + 1;
+        computer_score.textContent = parseInt(computer_score.textContent) + 1;
         victor = "computer";
         score_checker();
     }
@@ -68,13 +68,13 @@ let player_score = document.getElementsByClassName('score')[0];
  */
 
 function score_checker() {
-    if (player_score.innerHTML == 5) {
-       player_score.innerHTML = 0;
-       computer_score.innerHTML = 0;
+    if (player_score.textContent == 5) {
+       player_score.textContent = 0;
+       computer_score.textContent = 0;
        alert("player has won!");
-    } else if (computer_score.innerHTML == 5) {
-       player_score.innerHTML = 0;
-       computer_score.innerHTML = 0;
+    } else if (computer_score.textContent == 5) {
+       player_score.textContent = 0;
+       computer_score.textContent = 0;
        alert("computer has won!");             
     }
  }
