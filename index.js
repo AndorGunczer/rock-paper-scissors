@@ -78,3 +78,21 @@ function score_checker() {
        alert("computer has won!");             
     }
  }
+
+start_button = document.querySelector('#game_menu');
+
+start_button.onclick = () => {
+    game_window = document.querySelectorAll('.game_window');
+    body = document.querySelector('body');
+
+    console.log(game_window);
+    console.log(body);
+    game_start_button = document.querySelector('#game_menu');
+    console.log(game_start_button);
+    game_start_button.remove();
+    body.setAttribute('style', 'display: block');
+    game_window.forEach(element => {
+        element.classList.remove('game_window');
+    });
+
+}
