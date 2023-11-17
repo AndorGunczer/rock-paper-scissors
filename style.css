@@ -76,6 +76,12 @@ img {
     font-size: 4em;
 }
 
+.back_to_menu {
+    margin: 12em auto auto 10.5em;
+    width: 8em;
+    height: 3em;
+}
+
 .game_window {
     display: none;
 }

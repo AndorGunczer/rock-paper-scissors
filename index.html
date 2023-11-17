@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h1 class="game_window">Welcome to Rock-Paper-Scissors</h1>
-    <h2 class="game_window">Choose one and fight the computer!</h2>
-    <p class="game_window">The participant who reaches 5 points first, wins.</p>
-    <div class="score_container game_window">
+    <h1 class="game_window to_show">Welcome to Rock-Paper-Scissors</h1>
+    <h2 class="game_window to_show">Choose one and fight the computer!</h2>
+    <p class="game_window to_show">The participant who reaches 5 points first, wins.</p>
+    <div class="score_container game_window to_show">
         <div class="box">
             <p class="participants">player</p>
             <p class="participants">computer</p>
@@ -24,7 +24,7 @@
             <p class="score">0</p>
         </div>
     </div>
-    <div class="symbol_container game_window">
+    <div class="symbol_container game_window to_show">
         <div class="symbols" id="rock" onclick="decisions(this)">
             <img src="./images/rock.jpg" alt="rock">
         </div>
@@ -36,6 +36,7 @@
         </div>
     </div>
     <button id="game_menu">Play Game</button>
+    <button class="back_to_menu game_window to_show">Back to Menu</button>
     <script src="./index.js"></script>
 </body>
 </html>
