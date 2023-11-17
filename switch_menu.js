@@ -5,7 +5,7 @@
 start_button = document.querySelector('#game_menu');
 back_to_menu_button = document.querySelector('.back_to_menu');
 
-start_button.onclick = () => {
+start_button.addEventListener('click', () => {
     game_window = document.querySelectorAll('.to_show');
     body = document.querySelector('body');
     game_start_button = document.querySelector('#game_menu');
@@ -18,13 +18,13 @@ start_button.onclick = () => {
     game_window.forEach(element => {
         element.classList.remove('game_window');
     });
-}
+});
 
 /*
     Hide game menu, and make the start menu button visible
 */
 
-back_to_menu_button.onclick = () => {
+back_to_menu_button.addEventListener('click', () => {
     game_window = document.querySelectorAll('.to_show');
     body = document.querySelector('body');
     game_start_button = document.querySelector('#game_menu'); 
@@ -34,4 +34,4 @@ back_to_menu_button.onclick = () => {
     game_window.forEach(element => {
         element.classList.add('game_window');
     });
-}
+});
